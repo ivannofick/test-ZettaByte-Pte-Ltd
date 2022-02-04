@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .arrow {
+    color: black;
+  }
+
+  .heart {
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 10px;
+  }
+
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+  }
+
+  .heart:before {
+    top: -7px;
+    left: 0;
+  }
+
+  .heart:after {
+    left: 7px;
+    top: 0;
+  }
+
+
+.bookmark.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 300px;
+  width: 100px;
+  height: 250px;
+  border-radius: 0 0 1px 1px ;
+  border-top: solid 10px currentColor;
+  border-left: solid 10px currentColor;
+  border-right: solid 10px currentColor;
+}
+
+.bookmark.icon:before {
+  content: '';
+  position: absolute;
+  top: 203px;
+  left: 8px;
+  width: 75px;
+  height: 75px;
+  border-radius: 0  0 10px 10px ;
+  z-index:-1;
+  border-top: solid 10px currentColor;
+  border-left: solid 10px currentColor;
+  -webkit-transform: rotate(48deg);
+          transform: rotate(45deg);
+}
+
+
+</style>
+</head>
+    <body>
+      <div class="d-flex flex-row">
+          <div class="p-2">
+            <div class="card">
+              <img class="card-img-top" src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <div class="row">
+                  <div class="col-md-9">
+                    <a href="">Share</a>
+                    <a href="">Explore</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#targ_1" class="arrow float-right"> <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="card">
+              <img class="card-img-top" src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="row">
+                  <div class="col-md-9">
+                    <a href="">Share</a>
+                    <a href="">Explore</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#targ_1" class="arrow float-right"> <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="card">
+              <div class="card-head">
+                <div class="p-2">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="https://awsimages.detik.net.id/community/media/visual/2019/02/19/3fc2caf6-118c-457d-8a28-8868c1753fda.jpeg?w=750&q=90" class="rounded-circle" style="width: 55px; height: 53px;">
+                    </div>
+                    <div class="col-md-9">
+                      <h5 class="card-title" style="margin-bottom: -3px;">Morgan</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <img class="card-img-top" src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="card">
+              <img class="card-img-top" src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text float-right">
+                  <span>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  </span>
+                  <span>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </body>
+</html>
