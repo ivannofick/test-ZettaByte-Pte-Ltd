@@ -1,0 +1,32 @@
+<script>
+
+// Direction : For each value inside the array, get the next smallest prime number value greater than the input number, if input number is already prime return that input
+// For example: Input: 4, Expected: 5, Input: 14, Expected: 17, Input: 2, Expected: 2
+// Expected: [2, 5, 19, 23, 37, 89]
+const number = [2, 14, 18, 20, 35, 84];
+const answer = [];
+
+function result(num) {
+    if (num === 2) {
+        return num;
+    }
+    for (var i = num + 1;; i++) {
+        var isPrime = true;
+        for (var d = 2; d * d <= i; d++) {
+            if (i % d === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            return i;
+        }
+    }
+}
+
+number.forEach((val, key) => {
+  answer.push(result(val));
+});
+console.log(answer);
+
+</script>
