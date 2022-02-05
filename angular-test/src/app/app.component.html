@@ -13,3 +13,21 @@
     </tr>
   </tbody>
 </table>
+
+
+
+<table mdbTable>
+  <thead>
+    <tr>
+      <th *ngFor="let head of headElementsScholl" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let el of schoolData">
+      <td>{{ el.short_name  }}</td>
+      <td>{{ el.students  }}</td>
+      <td>{{ el.correction  }}</td>
+      <td>{{ el.diff  }}</td>
+    </tr>
+  </tbody>
+</table>
