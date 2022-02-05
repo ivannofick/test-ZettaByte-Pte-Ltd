@@ -4,14 +4,9 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class AppService {
 
-   constructor(private http: HttpClient) {
+   constructor(private http: HttpClient) {}
 
-        this.getJSON().subscribe(data => {
-            console.log(data);
-        });
-    }
-
-    public getJSON(): Observable<any> {
-        return this.http.get("./assets/json-data/student-stable-list.json");
+    public get(url: string): Observable<any> {
+        return this.http.get(url);
     }
 }
